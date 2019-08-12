@@ -1,0 +1,11 @@
+@import '../settings/typography';
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
