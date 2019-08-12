@@ -29,7 +29,7 @@ Creates a static website displaying the Storybook components in the folder `/sto
 
 ## How this repository was created.
 
-1. npx create-react-app my-guide --typescript
+1. npx create-react-app my-guide --typescript --use-npm
 2. cd my-guide
 3. npx -p @storybook/cli sb init
 4. npm install node-sass -S
