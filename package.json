@@ -2,26 +2,34 @@
   "name": "storybook-experiment",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "files": [
+    "src/assets/**/*",
+    "src/components/**/*",
+    "src/styles/**/*"
+  ],
   "dependencies": {
+    "react-scripts": "3.1.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.1.10",
+    "@storybook/addon-links": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "@storybook/react": "^5.1.10",
     "@types/jest": "24.0.17",
-    "@types/node": "12.7.1",
+    "@types/node": "12.7.1"
+  },
+  "peerDependencies": {
     "@types/react": "16.9.1",
     "@types/react-dom": "16.8.5",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.0",
     "typescript": "3.5.3"
-  },
-  "files": [
-    "./src/assets/**/*",
-    "./src/components/**/*",
-    "./src/styles/**/*"
-  ],
-  "scripts": {
-    "test": "react-scripts test",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,11 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^5.1.10",
-    "@storybook/addon-links": "^5.1.10",
-    "@storybook/addons": "^5.1.10",
-    "@storybook/react": "^5.1.10"
   }
 }
