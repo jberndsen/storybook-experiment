@@ -14,9 +14,9 @@
     "typescript": "3.5.3"
   },
   "files": [
-    "./src/assets/",
-    "./src/components/",
-    "./src/styles/"
+    "./src/assets/**/*",
+    "./src/components/**/*",
+    "./src/styles/**/*"
   ],
   "scripts": {
     "test": "react-scripts test",
