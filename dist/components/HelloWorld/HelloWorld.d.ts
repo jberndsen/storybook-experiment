@@ -1,4 +1,4 @@
 import React from 'react';
-import './HelloWorld.scss';
+import './HelloWorld.css';
 declare const HelloWorld: React.FC;
 export default HelloWorld;

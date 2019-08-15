@@ -5,9 +5,10 @@
   "main": "dist/index.js",
   "types": "src/index.ts",
   "scripts": {
-    "build": "rimraf dist && npm run build:ts && npm run build:scss",
+    "build": "rimraf dist && npm run build:ts && npm run build:scss && npm run build:update-scss-imports",
     "build:scss": "node-sass src -o dist",
     "build:ts": "tsc --build tsconfig.json",
+    "build:update-scss-imports": "grep -rl '.scss' dist | xargs sed -i '' -e 's/.scss/.css/g'",
     "test": "react-scripts test",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
