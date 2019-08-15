@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files 
+ * This file should be imported in the root scss file to set all base CSS.
+ */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Verdana, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.o-boxed {
+  border: 1px solid red; }
