@@ -2,7 +2,7 @@
   "name": "storybook-experiment",
   "version": "0.1.0",
   "private": true,
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "types": "src/index.ts",
   "scripts": {
     "build": "rimraf dist && npm run build:ts && npm run build:scss",
