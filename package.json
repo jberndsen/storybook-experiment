@@ -1,24 +1,25 @@
 {
-  "name": "storybook-experiment",
+  "name": "storybook-react-library",
+  "author": "Jeroen Berndsen",
+  "license": "MIT",
+  "homepage": "https://github.com/jberndsen/storybook-experiment",
+  "readme": "https://github.com/jberndsen/storybook-experiment/README.md",
   "version": "0.1.0",
   "private": true,
   "main": "dist/index.js",
-  "types": "src/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && npm run build:ts && npm run build:scss && npm run build:update-scss-imports",
     "build:scss": "node-sass src -o dist",
     "build:ts": "tsc --build tsconfig.json",
     "build:update-scss-imports": "grep -rl '.scss' dist | xargs sed -i '' -e 's/.scss/.css/g'",
-    "test": "react-scripts test",
+    "test": "jest",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "files": [
     "dist/**/*"
   ],
-  "dependencies": {
-    "react-scripts": "3.1.0"
-  },
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.10",
     "@storybook/addon-links": "^5.1.10",
@@ -28,6 +29,7 @@
     "@types/node": "12.7.1",
     "@types/react": "16.9.1",
     "@types/react-dom": "16.8.5",
+    "jest": "^24.9.0",
     "node-sass": "^4.12.0",
     "rimraf": "^3.0.0",
     "typescript": "3.5.3"

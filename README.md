@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## TODO
+
+1. Fix jest test setup
+2. Add npm publishing scripts (public NPM, Artifactory) and remove dist from VCS
+3. write proper readme on how to install, configure and consume.
+4. add storybook readme addon
+5. update build script (update-scss-imports) to work on other OS too.
+6. complete ITCSS setup, include theming guide.
+7. create an npx script to scaffold this out for new component library projects.
+
 ## Consume
 
 1. npm install git+ssh://git@bitbucket.org/{user}/{repository}.git
@@ -8,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In this project directory, you can run:
 
 ### `npm run storybook`
 
@@ -20,20 +30,12 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs Jest.
 
 ### `npm run build-storybook`
 
 Creates a static website displaying the Storybook components in the folder `/storybook-static`.
 
-## How this repository was created.
+### `npm run build`
 
-1. npx create-react-app my-guide --typescript --use-npm
-2. cd my-guide
-3. npx -p @storybook/cli sb init
-4. npm install node-sass -S
-5. rename all .css files to .scss and refactor import statements
-6. Manually added the ITCSS file structure in `src/styles`
-7. Added the `global-scss-loader.scss` and magic import statement in the `.storybook` config.
-8. Removed default App stuff created by create-react-app.
+Creates a dist folder containing compiled components to be used in your other React projects.
