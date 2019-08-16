@@ -11,7 +11,7 @@
 
 ## Consume
 
-1. npm install git+ssh://git@bitbucket.org/{user}/{repository}.git
+1. run `npm install github:jberndsen/storybook-experiment`
 2. add `@import '~storybook-experiment/dist/styles/global';` to top of main index.scss file.
 3. Directly the components you wish to use, i.e. `import { HelloWorld } from 'storybook-experiment';`
 
