@@ -6,7 +6,8 @@
 4. add storybook readme addon
 5. update build script (update-scss-imports) to work on other OS too.
 6. complete ITCSS setup, include theming guide.
-7. create an npx script to scaffold this out for new component library projects.
+7. clean up package.json (browserlist still necessary?) and set dependency versions correctly.
+8. create an npx script to scaffold this out for new component library projects.
 
 ## Consume
 
