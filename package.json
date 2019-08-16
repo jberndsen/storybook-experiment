@@ -1,11 +1,11 @@
 {
   "name": "storybook-react-library",
   "author": "Jeroen Berndsen",
+  "description": "Sets up a component library with storybook, ITCSS and publish scripts",
   "license": "MIT",
   "homepage": "https://github.com/jberndsen/storybook-experiment",
-  "readme": "https://github.com/jberndsen/storybook-experiment/README.md",
-  "version": "0.1.0",
-  "private": true,
+  "readme": "https://github.com/jberndsen/storybook-experiment#README",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

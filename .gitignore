@@ -10,6 +10,9 @@
 /build
 /storybook-static
 
+# editors
+.idea
+
 # misc
 .DS_Store
 npm-debug.log*
