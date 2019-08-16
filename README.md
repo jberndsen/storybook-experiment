@@ -13,8 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Consume
 
 1. npm install git+ssh://git@bitbucket.org/{user}/{repository}.git
-2. add `@import '~storybook-experiment/src/styles/styles';` to top of main index.scss file.
-3. directly import components from node_modules using ~ (tilde) something (update me once discovered);
+2. add `@import '~storybook-experiment/dist/styles/global';` to top of main index.scss file.
+3. Directly the components you wish to use, i.e. `import { HelloWorld } from 'storybook-experiment';`;
 
 ## Available Scripts
 
